@@ -2,8 +2,7 @@ import React from 'react';
 import { ArrowRight, CheckCircle2, TrendingUp, Sparkles, MessageSquare } from 'lucide-react';
 import { PERSONAL_INFO } from '../data/portfolioData';
 
-// Image generated via generate_image tool
-const HERO_IMAGE_URL = '/src/assets/images/hero_3d_marketer_1791961359094.jpg';
+import heroImage from '../assets/images/hero_3d_marketer_1791961359094.jpg';
 
 export const Hero: React.FC = () => {
   const handleScrollToServices = (e: React.MouseEvent<HTMLAnchorElement>) => {
@@ -100,7 +99,7 @@ export const Hero: React.FC = () => {
             {/* 3D Illustration */}
             <div className="overflow-hidden rounded-3xl shadow-lg border border-neutral-100 bg-white">
               <img
-                src={HERO_IMAGE_URL}
+                src={heroImage}
                 alt="Muhammad Farman - Digital Marketing & IT Manager 3D Illustration"
                 className="w-full h-auto object-cover transform hover:scale-[1.02] transition-transform duration-500"
                 referrerPolicy="no-referrer"

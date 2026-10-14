@@ -2,8 +2,7 @@ import React from 'react';
 import { ArrowRight, CheckCircle2, ShieldCheck, Award } from 'lucide-react';
 import { PERSONAL_INFO, CORE_CAPABILITIES } from '../data/portfolioData';
 
-// Image generated via generate_image tool
-const ABOUT_IMAGE_URL = '/src/assets/images/about_3d_analytics_1791961388682.jpg';
+import aboutImage from '../assets/images/about_3d_analytics_1791961388682.jpg';
 
 export const AboutMe: React.FC = () => {
   const handleScrollToExperience = (e: React.MouseEvent<HTMLAnchorElement>) => {
@@ -76,7 +75,7 @@ export const AboutMe: React.FC = () => {
             <div className="relative w-full max-w-md lg:max-w-none">
               <div className="overflow-hidden rounded-3xl shadow-lg border border-neutral-100 bg-white">
                 <img
-                  src={ABOUT_IMAGE_URL}
+                  src={aboutImage}
                   alt="Muhammad Farman - Marketing Analytics & Technology Strategy 3D Illustration"
                   className="w-full h-auto object-cover transform hover:scale-[1.02] transition-transform duration-500"
                   referrerPolicy="no-referrer"

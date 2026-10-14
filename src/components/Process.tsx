@@ -2,8 +2,7 @@ import React from 'react';
 import { ArrowRight, MessageSquare } from 'lucide-react';
 import { PROCESS_STEPS, PERSONAL_INFO } from '../data/portfolioData';
 
-// Image generated via generate_image tool
-const PROCESS_IMAGE_URL = '/src/assets/images/process_3d_chair_1791961359527.jpg';
+import processImage from '../assets/images/process_3d_chair_1791961359527.jpg';
 
 export const Process: React.FC = () => {
   const handleScrollToExperience = (e: React.MouseEvent<HTMLAnchorElement>) => {
@@ -24,7 +23,7 @@ export const Process: React.FC = () => {
               {/* Subtle background card framing */}
               <div className="overflow-hidden rounded-3xl shadow-md border border-[#F15A24]/10 bg-white">
                 <img
-                  src={PROCESS_IMAGE_URL}
+                  src={processImage}
                   alt="Muhammad Farman - Strategic Process and Planning 3D Illustration"
                   className="w-full h-auto object-cover transform hover:scale-[1.02] transition-transform duration-500"
                   referrerPolicy="no-referrer"
